@@ -137,8 +137,8 @@ def run_benches(n_objects: 1, n_iterations: 1)
   end
   #p object
 
-  puts "%-12s: %8d" % ["objects", n_objects]
-  puts "%-12s: %8d" % ["iterations", n_iterations]
+  puts "* %-12s: %8d" % ["objects", n_objects]
+  puts "* %-12s: %8d" % ["iterations", n_iterations]
   puts
   2.times do |i|
     headers =  [["warmup", "bench"][i], "size", "dump", "load"]

@@ -14,8 +14,8 @@ The benchmark dumps and loads (using StringIO and whatever streaming mode the se
 
 Results, for a core2-duo 1.7GHz (circa 2009), ruby 2, unbuntu 12.04, json 1.7.7, msgppack 0.5.4:
 
-objects     :    10000
-iterations  :        1
+* objects     :    10000
+* iterations  :        1
 
      warmup:     size     dump     load
     marshal:   429632   0.0800   0.0500
