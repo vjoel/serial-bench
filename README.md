@@ -32,14 +32,14 @@ iterations  :        1
 objects     :        1
 iterations  :    10000
 
-    warmup:     size     dump     load
-   marshal:       50   0.2100   0.3000
-      yaml:       53   3.5100   1.9100
-      json:       37   0.1900   0.1800
-   msgpack:       27   0.0800   0.0400
+     warmup:     size     dump     load
+    marshal:       50   0.2100   0.3000
+       yaml:       53   3.5100   1.9100
+       json:       37   0.1900   0.1800
+    msgpack:       27   0.0800   0.0400
 
-     bench:     size     dump     load
-   marshal:       50   0.2000   0.3100
-      yaml:       53   3.5000   1.9200
-      json:       37   0.1800   0.1800
-   msgpack:       27   0.0800   0.0400
+      bench:     size     dump     load
+    marshal:       50   0.2000   0.3100
+       yaml:       53   3.5000   1.9200
+       json:       37   0.1800   0.1800
+    msgpack:       27   0.0800   0.0400
