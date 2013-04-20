@@ -142,13 +142,13 @@ def run_benches(n_objects: 1, n_iterations: 1)
   puts
   2.times do |i|
     headers =  [["warmup", "bench"][i], "size", "dump", "load"]
-    puts "%11s: %8s %8s %8s\n" % headers
+    puts "%15s: %8s %8s %8s\n" % headers
 
     args = [n_iterations, object]
-    puts "%11s: %8d %8.4f %8.4f\n" % ["marshal", *bench_marshal(*args)]
-    puts "%11s: %8d %8.4f %8.4f\n" % ["yaml", *bench_yaml(*args)]
-    puts "%11s: %8d %8.4f %8.4f\n" % ["json", *bench_json(*args)]
-    puts "%11s: %8d %8.4f %8.4f\n" % ["msgpack", *bench_msgpack(*args)]
+    puts "%15s: %8d %8.4f %8.4f\n" % ["marshal", *bench_marshal(*args)]
+    puts "%15s: %8d %8.4f %8.4f\n" % ["yaml", *bench_yaml(*args)]
+    puts "%15s: %8d %8.4f %8.4f\n" % ["json", *bench_json(*args)]
+    puts "%15s: %8d %8.4f %8.4f\n" % ["msgpack", *bench_msgpack(*args)]
     puts
   end
 end
