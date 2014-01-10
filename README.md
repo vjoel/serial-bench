@@ -5,14 +5,17 @@ Set of benchmarks for several serialization libraries in ruby.
 
 Currently, this includes:
 
-    marshal
-    yaml
-    json
-    msgppack
+* marshal
+
+* yaml
+
+* json
+
+* msgpack
 
 The benchmark dumps and loads (using StringIO and whatever streaming mode the serialization library offers). Then it checks that the resulting object equals the original. Then it measures the size of serialized data in bytes, and the dump and load times, in seconds.
 
-Results, for a core2-duo 1.7GHz (circa 2009), ruby 2, unbuntu 12.04, json 1.7.7, msgppack 0.5.4:
+Results, for a core2-duo 1.7GHz (circa 2009), ruby 2.0, unbuntu 12.04, json 1.7.7, msgppack 0.5.4:
 
 * objects     :    10000
 * iterations  :        1
